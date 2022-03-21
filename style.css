@@ -1,0 +1,322 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body, html {
+    height: 100%;
+	background-color:#404040;
+}
+footer {
+   background-color: #1f4e79;
+   font-size: 11px;
+   text-align: center;
+   color:white;
+   flex: 1;
+   height: 50px;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   margin-bottom: 0px;
+   position:fixed;
+}
+h1 {
+  padding-left:2%;
+  text-align: left;
+  font-size: 40px;
+  color:white;
+  font-family: arial;
+}
+h2 {
+text-align: center;
+  font-size: 16px;
+  font-family: arial;
+}
+#img{
+	text-align: center;
+	flex: 1;
+	border: 5px;
+	height:"110"; 
+	width:"190";
+}
+div {
+  text-align: center;
+  flex: 1;
+}
+.content{
+	background-color:#404040;
+	height:100px;
+}
+.rating{
+	color:#c9c012;
+}
+.clear{
+	clear:both;
+}
+p {
+	font-size: 20px;
+	font-family: arial;
+}
+input {
+	text-align: center;
+	left:100px;
+}
+/* HEADER */
+
+.header{
+    width: 100%;
+    height: 100px;
+
+    background-color: #1f4e79;
+}
+    /* EVERYTHING TO DO WITH LOGO */
+    .container_logo{
+        width: 9%;
+        height: 100px;
+		padding-right: 2%;
+
+        float: left;
+
+        /* CENTERS EVERYTHING IN THE DIV (NOT THE DIV ITS SELF) */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* test colour */
+        /* background-color: aqua; */
+    }
+
+    /* EVERYTHING TO DO WITH SEARCH */
+    .container_search{
+        width: 65%;
+        height: 100px;
+
+        float: left;
+
+        /* CENTERS EVERYTHING IN THE DIV (NOT THE DIV ITS SELF) */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* test colour */
+        /* background-color: hotpink; */
+    }
+
+        .search_img{
+            height: 100%;
+            width: 60px;
+
+            float: left;
+
+            background-color: lightblue;
+
+            /* CENTERS EVERYTHING IN THE DIV (NOT THE DIV ITS SELF) */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 20px 0 0 20px;
+        }
+
+        .search_bar{
+            float: center;
+            background-color: whitesmoke;
+            border-radius: 20px;
+
+            width: 65%;
+            height: 50px;
+
+            /* CENTERS EVERYTHING IN THE DIV (NOT THE DIV ITS SELF) */
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            /* DROP SHADOW TO SEARCH BAR */
+            box-shadow: 2px 3px 5px 1px #969696; 
+        }
+
+        .search_bar input{
+            border: none;
+            background-color: whitesmoke;
+            height: 25px;
+            width: 80%;
+            outline: none;
+        }
+
+    /* EVERYTHING TO DO WITH USER */
+    .container_user{
+        width: 15%;
+        height: 100px;
+		padding-right: 15px;
+        float: right;
+
+        /* CENTERS EVERYTHING IN THE DIV (NOT THE DIV ITS SELF) */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+
+        /* test colour */
+        /* background-color: rebeccapurple;  */
+    }
+
+    .container_user p{
+        font-size: 35px;
+        padding: 3px;
+    }
+
+    .user_img{ 
+        height: 100%;
+        width: 25%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        /* background-color: aqua; */
+    }
+
+ 
+/* NAVIGATION BAR */
+.nav_bar{
+    background-color: #404040;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+
+    text-align: center;
+    position: static;
+
+    /* CENTERS EVERYTHING IN THE DIV (NOT THE DIV ITS SELF) */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    float: left;
+    background-color: #404040;
+    
+}
+
+.nav ul{
+    float: left;
+    height: 100%;
+    height: 90px;
+}
+
+nav ul li{
+    height: 90px;
+
+    float: left;
+
+    list-style: none;
+
+    display:flex;
+    align-items:center;
+
+    /* background-color: aqua; */
+}
+
+nav ul li a{
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    padding: 0 20px;
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+
+
+
+}
+
+nav ul li:hover{
+    background-color: #757575;
+}
+
+nav ul li a:hover{
+    text-decoration: underline; 
+    color: lightblue;
+}
+[class*="parallax"] {
+    height: 80%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1{
+    background-image: url('parallax.png');
+}
+/*@media screen and (max-width: 1080px) {
+  nav {
+    float: center;
+    width: 100%;
+	height: 130px;
+	
+  }
+   .parallax1{
+	  background-image: url('parallax alt.png');
+}
+}
+@media screen and (max-width: 650px) {
+  #nav span {
+	padding-left: 20px;
+	padding-right: 30px;
+}
+  p{
+	font-size: 12px;
+}
+.column3 {
+	flex:1;
+	float: left;
+	width: 33%;
+	padding-top: 5px;
+}
+.column2 {
+	height: 23%;
+}
+}
+@media screen and (max-width: 490px) {
+  nav {
+    float: none;
+    width: 100%;
+	height: 210px;
+	
+  }
+
+
+@media screen and (max-width: 430px) {
+  nav {
+    float: none;
+    width: 100%;
+	height: 200px;
+	
+  }
+  #nav{
+	  font-size: 30px;
+  }
+  p{
+	font-size: 10px;
+  }
+  #img{
+	  width:80%;
+	  height:80%;
+  }
+  #nav span {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+  .column2 {
+	height: 19%;
+}
+}
+*/
